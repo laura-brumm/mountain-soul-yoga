@@ -1,0 +1,722 @@
+/* ----- FONT (WEIGHT) ----- */
+
+$font: 'Montserrat', sans-serif;
+
+$font__bold: 600;
+$font__reg: 400;
+$font__light: 300;
+
+.font__bold {
+  font-weight: $font__bold;
+}
+
+.font__reg {
+  font-weight: $font__reg;
+}
+
+.font__light {
+  font-weight: $font__light;
+}
+
+/* ----- COLORS ----- */
+
+$color__primary: rgb(178, 196, 203);
+$color__primary-alpha: rgba(178, 196, 203, 0.7);
+$color__primary-dark: #97afb8;
+$color__secondary: rgb(242, 242, 242);
+$color__gray: rgb(125, 125, 125);
+$color__accent: rgb(209, 199, 190);
+$color__accent-hover: #beb0a3;
+$color__brown: rgb(154, 144, 135);
+
+
+.color__primary {
+  color: $color__primary;
+}
+
+.color__primary-alpha {
+  color: $color__primary-alpha;
+}
+
+.color__primary-dark {
+  color: $color__primary-dark;
+}
+
+.color__secondary {
+  color: $color__secondary;
+}
+
+.color__gray {
+  color: $color__gray;
+}
+
+.color__accent {
+  color: $color__accent;
+}
+
+.color__accent-hover {
+  color: $color__accent-hover;
+}
+
+.color__brown {
+  color: $color__brown;
+}
+
+
+/* ----- CLASSES ----- */
+
+.upper {
+  text-transform: uppercase;
+}
+
+
+/* ----- UNIVERSAL ----- */
+
+*,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+}
+
+section {
+  padding: {
+    top: 20px;
+    bottom: 20px;
+  }
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font: {
+    size: 28px;
+    weight: 700;
+  }
+  letter-spacing: 2.5px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font: {
+    size: 20px;
+    weight: 500;
+  }
+  letter-spacing: 2px;
+}
+
+p {
+  font: {
+    size: 16px;
+  }
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+button {
+  border: none;
+  border-raidus: 0;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+form {
+  padding: {
+    top: 24px;
+    bottom: 24px;
+  }
+}
+
+.form-control {
+  border: {
+    top: none;
+    right: none;
+    bottom: 2px solid $color__primary;
+    left: none;
+    radius: 0;
+  }
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $color__primary;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $color__primary;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $color__primary;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $color__primary;
+}
+
+
+/* ----- NAVIGATION ----- */
+
+.nav-bar {
+  background: $color__secondary;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.container__nav {
+  width: 80%;
+}
+
+.nav-left {
+  float: left;
+  .nav-link {
+    color: $color__primary;
+    letter-spacing: 3px;
+    line-height: 40px;
+    padding: 5px;
+
+    img {
+      background: $color__primary-alpha;
+      height: 100px;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      left: 75px;
+    }
+  }
+
+  .nav__brand {
+    position: fixed;
+    left: 175px;
+  }
+}
+
+.nav-right {
+  position: fixed;
+  right: 75px;
+  .nav-link {
+    font-size: 12px;
+    line-height: 40px;
+    padding: 5px;
+
+    &:hover {
+      background: $color__primary-alpha;
+      color: white;
+
+    }
+  }
+}
+
+
+/* ----- LEFT BAR ----- */
+
+.container__left-bar {
+  background: $color__secondary;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  width: 50px;
+  z-index: 999;
+
+  .content__left-bar {
+    position: fixed;
+    bottom: 60px;
+    width: 50px;
+
+    ul {
+      width: 100%;
+      text-align: center;
+
+      li {
+        font-size: 36px;
+        padding-top: 10px;
+
+        a {
+          color: $color__primary;
+
+          &:hover {
+            color: $color__primary-dark;
+            transition: 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* ----- RIGHT BAR ----- */
+
+.container__right-bar {
+  background: $color__secondary;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  width: 50px;
+  z-index: 999;
+
+  .content__right-bar {
+    position: absolute;
+    top: 50%;
+    transform: rotate(90deg);
+    transform-origin: 25px;
+
+    p {
+      margin: 0;
+      white-space: nowrap;
+
+      span {
+        color: $color__primary;
+        font-size: 10px;
+
+        a:hover {
+          color: $color__accent-hover;
+          text-decoration: none;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+
+/* ----- CONTAINER WRAPPER ----- */
+
+.container__wrapper {
+  padding: 50px;
+
+  @media (max-width: 767px) {
+    padding-bottom: 10px;
+  }
+}
+
+.padding__main-content {
+  padding-left: 20px;
+
+  @media (max-width: 1199px) {
+    padding-left: 0;
+  }
+}
+
+
+/* ----- BANNER SECTION ----- */
+
+.section__banner {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.container__banner {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2016/04/20161205_MtnSoul_628.jpg");
+  background: {
+		position: center;
+		size: cover;
+		repeat: no-repeat;
+  }
+  height: 100vh;
+
+  @media (max-width: 767px) {
+    height: 50vh;
+  }
+}
+
+
+/* ----- ABOUT SECTION ----- */
+
+.section__about {
+  text-align: center;
+  margin: 0 auto;
+
+  .align-left {
+    text-align: left;
+
+    @media (max-width: 1199px) {
+      padding-left: 20px;
+    }
+
+    @media (max-width: 991px) {
+      text-align: center;
+      padding: {
+        left: 30px;
+        right: 30px;
+      }
+    }
+  }
+
+  .about__form-input {
+    color: $color__primary;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .about__button {
+    background: $color__primary;
+    border-radius: 0;
+    color: white;
+    display: inline;
+    padding: 2px 10px;
+
+    &:hover {
+      color: $color__secondary;
+      text-decoration: none;
+    }
+  }
+}
+
+
+/* ----- TEACHER TRAINING SECTION ----- */
+
+.section__teacher-training {
+  text-align: center;
+  margin: 0 auto;
+
+  @media (max-width: 991px) {
+    padding: {
+      left: 30px;
+      right: 30px;
+    }
+  }
+
+  a:hover {
+      color: $color__accent-hover;
+      text-decoration: none;
+      transition: 0.2s ease-in-out;
+  }
+
+  .btn__teacher-training {
+    background: $color__primary;
+    border-radius: 0;
+    color: white;
+    padding: 2px 10px;
+
+    text-decoration: none;
+
+    &:hover {
+      color: $color__secondary;
+    }
+  }
+}
+
+
+/* ----- MAIN CONTENT ----- */
+
+.main-content__block-one {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2016/04/20161205_MtnSoul_664-1.jpg");
+}
+
+.main-content__block-two {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2018/03/IMG_3907-1.jpg?id=1806");
+}
+
+.main-content__block-three {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2016/10/JMA_08192013_JuliaYoga_176.jpg?id=1087");
+}
+
+.main-content__block-four {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2016/04/DSC_0658-1.jpg?id=1642");
+}
+
+.main-content__block-one,
+.main-content__block-two,
+.main-content__block-three,
+.main-content__block-four {
+  background: {
+		position: center;
+		size: cover;
+		repeat: no-repeat;
+  }
+  margin: {
+    top: 10px;
+    bottom: 10px;
+  }
+  text-align:center;
+}
+
+.content__block-one,
+.content__block-two,
+.content__block-three,
+.content__block-four {
+  padding: 40px 20px;
+
+  @media (max-width: 991px) {
+    padding: 40px 30px;
+  }
+}
+
+.section__main-content {
+  h3 {
+    color: white;
+  }
+
+  p {
+    color: white;
+  }
+
+  @media (max-width: 991px) {
+    padding-bottom: 0;
+  }
+
+  .main-content__button {
+    background: white;
+    border: none;
+    border-radius: 0;
+    color: $color__primary;
+    font-size: 13px;
+    padding: 2px 10px;
+
+    &:hover {
+      background: $color__primary;
+      color: white;
+      transition: 0.2s ease-in-out;
+    }
+  }
+}
+
+.wrapper__third-col-img {
+  @media (max-width: 1199px) {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.section__third-col-img {
+
+  @media (max-width: 1199px) {
+    padding: 0;
+  }
+
+  .container__third-col-img {
+    height: 125vh;
+
+    @media (max-width: 1199px) {
+      height: 50vh;
+    }
+  }
+
+  .img__third-col-img {
+    background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2016/04/20161205_MtnSoul_227.jpg?id=1241");
+
+    background: {
+      position: center;
+      size: cover;
+      repeat: no-repeat;
+    }
+
+    height: 100%;
+
+    margin: {
+      top: 10px;
+      bottom: 10px;
+    }
+
+    @media (max-width: 1199px) {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 991px) {
+      margin-top: 0;
+    }
+  }
+}
+
+
+/* ----- FOOTER ----- */
+
+.footer__classes-container {
+  background: $color__primary;
+  bottom: 0;
+  color: white;
+  display: inline-block;
+  padding: 15px 75px;
+  position: fixed;
+  right: 60px;
+  z-index: 999;
+
+  a {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    text-align: center;
+
+    &:hover {
+      color: $color__primary-dark;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  @media (max-width: 767px) {
+    position: static;
+    width: 100%;
+  }
+}
+
+.footer__classes {
+  display: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+
+  li {
+    padding-bottom: 20px;
+
+    p {
+      font-size: 12px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .btn-classes {
+      background: white;
+      border-radius: 0;
+      color: $color__primary;
+      font-size: 12px;
+      margin-top: 5px;
+      padding: 3px 10px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.footer {
+  background: $color__secondary;
+  bottom: 0;
+  height: 50px;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 998;
+
+  .footer__content {
+    position: fixed;
+    right: 60px;
+  }
+
+  .footer__contact-container {
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    right: 450px;
+
+    ul {
+      overflow: hidden;
+
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+
+    li {
+      color: $color__primary;
+      float: left;
+      font-size: 12px;
+      line-height: 40px;
+      padding: 5px 10px;
+    }
+  }
+}
+
+
+
+
+/* ---------- CLASSES PAGE ---------- */
+
+.nav__classes {
+  left: 50px;
+  position: fixed;
+  text-align: right;
+  top: 240px;
+  width: 22%;
+  width: calc(25% - 50px);
+
+  li {
+    line-height: 20px;
+    padding-bottom: 10px;
+
+    a {
+      color: $color__accent;
+      font-weight: $font__bold;
+
+      &:hover {
+        color: black;
+        text-decoration:underline;
+        text-decoration-color: $color__accent;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.classes-schedule,
+.classes-description {
+  color: $color__gray;
+  font: {
+    size: 40px;
+    weight: $font__bold;
+  }
+  letter-spacing: 4px;
+  padding: 100px 0 20px 0;
+}
+
+table {
+  max-width: 100%;
+  width: 100%;
+
+  thead {
+    border-top: 1px solid $color__primary;
+    border-bottom: 1px solid $color__primary;
+    color: $color__primary;
+    font: {
+      size: 16px;
+      weight: $font__bold;
+    }
+    padding: 10px;
+
+    th {
+      letter-spacing: 0.5px;
+      line-height: 20px;
+      padding: 10px 0;
+    }
+  }
+
+  tbody {
+    color: $color__gray;
+
+    td {
+      letter-spacing: 0.5px;
+      line-height: 24px;
+      padding: 5px 0;
+      width: 25%;
+    }
+  }
+}
+
+.description__classes {
+  color: $color__gray;
+  margin-right: 10px;
+
+  h3 {
+    font: {
+      size: 24px;
+      weight: $font__bold;
+    }
+  }
+}
