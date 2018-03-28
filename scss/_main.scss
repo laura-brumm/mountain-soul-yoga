@@ -674,6 +674,10 @@ form {
   }
   letter-spacing: 4px;
   padding: 100px 0 20px 10px;
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 table {
@@ -723,5 +727,92 @@ table {
       size: 24px;
       weight: $font__bold;
     }
+  }
+
+  @media (max-width: 767px) {
+    text-align: center;
+
+    h2 {
+      padding-top: 75px;
+    }
+  }
+}
+
+
+
+
+/* ---------- PRICING PAGE ---------- */
+
+.nav__pricing {
+  left: 50px;
+  position: fixed;
+  text-align: right;
+  top: 240px;
+  width: 22%;
+  width: calc(25% - 50px);
+
+  li {
+    line-height: 20px;
+    padding-bottom: 10px;
+
+    a {
+      color: $color__accent;
+      font-weight: $font__bold;
+
+      &:hover {
+        color: black;
+        text-decoration:underline;
+        text-decoration-color: $color__accent;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.content__pricing {
+  h1 {
+    color: $color__gray;
+    font: {
+      size: 40px;
+      weight: $font__bold;
+    }
+    letter-spacing: 4px;
+    padding: 100px 0 20px 10px;
+  }
+
+  @media (max-width: 767px) {
+    text-align: center;
+
+    h2 {
+      padding-top: 75px;
+    }
+  }
+
+  p {
+    color: $color__gray;
+  }
+
+  .teacher-training-link {
+    &:hover {
+      color: $color__brown;
+      text-decoration: none;
+    }
+  }
+
+  h2 {
+    color: $color__primary;
+  }
+
+  h4 {
+    font: {
+      size: 14px;
+      weight: $font__bold;
+    }
+    letter-spacing: 1px;
+    padding-bottom: 10px;
   }
 }

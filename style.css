@@ -513,6 +513,10 @@ form {
   font-weight: 600;
   letter-spacing: 4px;
   padding: 100px 0 20px 10px; }
+  @media (max-width: 767px) {
+    .classes-schedule,
+    .classes-description {
+      text-align: center; } }
 
 table {
   width: 100%; }
@@ -546,3 +550,60 @@ table {
   .description__classes h3 {
     font-size: 24px;
     font-weight: 600; }
+  @media (max-width: 767px) {
+    .description__classes {
+      text-align: center; }
+      .description__classes h2 {
+        padding-top: 75px; } }
+
+/* ---------- PRICING PAGE ---------- */
+.nav__pricing {
+  left: 50px;
+  position: fixed;
+  text-align: right;
+  top: 240px;
+  width: 22%;
+  width: calc(25% - 50px); }
+  .nav__pricing li {
+    line-height: 20px;
+    padding-bottom: 10px; }
+    .nav__pricing li a {
+      color: #d1c7be;
+      font-weight: 600; }
+      .nav__pricing li a:hover {
+        color: black;
+        text-decoration: underline;
+        text-decoration-color: #d1c7be;
+        transition: 0.3s ease-in-out; }
+  @media (max-width: 767px) {
+    .nav__pricing {
+      display: none; } }
+
+.content__pricing h1 {
+  color: #7d7d7d;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  padding: 100px 0 20px 10px; }
+
+@media (max-width: 767px) {
+  .content__pricing {
+    text-align: center; }
+    .content__pricing h2 {
+      padding-top: 75px; } }
+
+.content__pricing p {
+  color: #7d7d7d; }
+
+.content__pricing .teacher-training-link:hover {
+  color: #9a9087;
+  text-decoration: none; }
+
+.content__pricing h2 {
+  color: #b2c4cb; }
+
+.content__pricing h4 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-bottom: 10px; }
