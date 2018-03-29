@@ -816,3 +816,64 @@ table {
     padding-bottom: 10px;
   }
 }
+
+
+
+
+/* ---------- ABOUT PAGE ---------- */
+
+.about__container {
+
+  h1 {
+    color: $color__gray;
+    font: {
+      size: 40px;
+      weight: $font__bold;
+    }
+    letter-spacing: 4px;
+    padding: 100px 0 20px 0;
+  }
+}
+
+.about__intro,
+.about__team {
+  padding: 0 10px 30px 10px;
+
+  h4 {
+    font: {
+      size: 14px;
+      weight: $font__bold;
+    }
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+  }
+
+  p {
+    color: $color__gray;
+  }
+}
+
+.about__team {
+  text-align: center;
+
+  h3 {
+    padding: 10px 0;
+  }
+
+  a {
+    font-weight: $font__bold;
+
+    &:hover {
+      color: $color__accent-hover;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+.about__employee-container {
+  padding: {
+    top: 10px;
+    bottom: 10px;
+  }
+}

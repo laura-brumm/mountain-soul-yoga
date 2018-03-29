@@ -607,3 +607,39 @@ table {
   font-weight: 600;
   letter-spacing: 1px;
   padding-bottom: 10px; }
+
+/* ---------- ABOUT PAGE ---------- */
+.about__container h1 {
+  color: #7d7d7d;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  padding: 100px 0 20px 0; }
+
+.about__intro,
+.about__team {
+  padding: 0 10px 30px 10px; }
+  .about__intro h4,
+  .about__team h4 {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-bottom: 20px; }
+  .about__intro p,
+  .about__team p {
+    color: #7d7d7d; }
+
+.about__team {
+  text-align: center; }
+  .about__team h3 {
+    padding: 10px 0; }
+  .about__team a {
+    font-weight: 600; }
+    .about__team a:hover {
+      color: #beb0a3;
+      text-decoration: none;
+      transition: 0.3s ease-in-out; }
+
+.about__employee-container {
+  padding-top: 10px;
+  padding-bottom: 10px; }
