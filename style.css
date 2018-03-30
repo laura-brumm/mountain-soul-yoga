@@ -643,3 +643,89 @@ table {
 .about__employee-container {
   padding-top: 10px;
   padding-bottom: 10px; }
+
+/* ---------- TEACHER TRAININGS PAGE ---------- */
+.teacher-trainings__intro {
+  padding: 5px 20px; }
+  .teacher-trainings__intro h1 {
+    color: #7d7d7d;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    padding: 100px 0 20px 0; }
+  .teacher-trainings__intro h4 {
+    color: #7d7d7d;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0 5px 0; }
+  .teacher-trainings__intro p {
+    padding-bottom: 5px;
+    margin: 0; }
+  .teacher-trainings__intro a {
+    display: block;
+    padding-bottom: 20px; }
+    .teacher-trainings__intro a:hover {
+      color: #beb0a3;
+      text-decoration: none;
+      transition: 0.3s ease-in-out; }
+  .teacher-trainings__intro button {
+    background: #b2c4cb;
+    color: white;
+    display: block;
+    font-size: 13px;
+    margin: 10px auto; }
+    .teacher-trainings__intro button:hover {
+      color: #f2f2f2;
+      transition: 0.3s ease-in-out; }
+  @media (max-width: 767px) {
+    .teacher-trainings__intro {
+      text-align: center; } }
+
+.teacher-trainings__main {
+  margin-bottom: 50px; }
+
+.teacher-trainings__first {
+  background: #f2f2f2; }
+
+.teacher-trainings__second {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2017/07/julia_bolster_supta_baddha_konasana.jpg"); }
+
+.teacher-trainings__third {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2017/01/julia-681x1024.jpg"); }
+
+.teacher-trainings__blog-container {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 50px 5px;
+  position: relative; }
+  .teacher-trainings__blog-container .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(178, 196, 203, 0.7);
+    z-index: 0; }
+  .teacher-trainings__blog-container .content {
+    position: relative;
+    text-align: center;
+    z-index: 1; }
+    .teacher-trainings__blog-container .content h3 {
+      color: white;
+      line-height: 30px;
+      padding-bottom: 10px; }
+    .teacher-trainings__blog-container .content p {
+      color: white;
+      line-height: 24px; }
+  .teacher-trainings__blog-container .teacher-trainings__button {
+    background: white;
+    color: #b2c4cb;
+    font-size: 13px;
+    padding: 5px 10px; }
+    .teacher-trainings__blog-container .teacher-trainings__button:hover {
+      background: #b2c4cb;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s ease-in-out; }

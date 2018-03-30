@@ -877,3 +877,132 @@ table {
     bottom: 10px;
   }
 }
+
+
+
+
+/* ---------- TEACHER TRAININGS PAGE ---------- */
+
+.teacher-trainings__intro {
+  padding: 5px 20px;
+
+    h1 {
+      color: $color__gray;
+      font: {
+        size: 40px;
+        weight: $font__bold;
+      }
+      letter-spacing: 4px;
+      padding: 100px 0 20px 0;
+    }
+
+    h4 {
+      color: $color__gray;
+      font: {
+        size: 18px;
+        weight: $font__bold;
+      }
+      padding: 10px 0 5px 0;
+    }
+
+    p {
+      padding-bottom: 5px;
+      margin: 0;
+    }
+
+    a {
+      display: block;
+      padding-bottom: 20px;
+
+      &:hover {
+        color: $color__accent-hover;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+      }
+    }
+
+    button {
+      background: $color__primary;
+      color: white;
+      display: block;
+      font-size: 13px;
+      margin: 10px auto;
+
+      &:hover {
+        color: $color__secondary;
+        transition: 0.3s ease-in-out;
+      }
+    }
+
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+}
+
+.teacher-trainings__main {
+  margin-bottom: 50px;
+}
+
+.teacher-trainings__first {
+  background: $color__secondary;
+}
+
+.teacher-trainings__second {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2017/07/julia_bolster_supta_baddha_konasana.jpg");
+}
+
+.teacher-trainings__third {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2017/01/julia-681x1024.jpg");
+}
+
+.teacher-trainings__blog-container {
+  background: {
+    position: center;
+    size: cover;
+    repeat: no-repeat;
+  }
+  height: 100%;
+  padding: 50px 5px;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $color__primary-alpha;
+    z-index: 0;
+  }
+
+  .content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+
+    h3 {
+      color: white;
+      line-height: 30px;
+      padding-bottom: 10px;
+    }
+
+    p {
+      color: white;
+      line-height: 24px;
+    }
+  }
+
+  .teacher-trainings__button {
+    background: white;
+    color: $color__primary;
+    font-size: 13px;
+    padding: 5px 10px;
+
+    &:hover {
+      background: $color__primary;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
