@@ -698,7 +698,7 @@ table {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
-  padding: 50px 5px;
+  padding: 50px 20px;
   position: relative; }
   .teacher-trainings__blog-container .overlay {
     position: absolute;
@@ -725,6 +725,96 @@ table {
     font-size: 13px;
     padding: 5px 10px; }
     .teacher-trainings__blog-container .teacher-trainings__button:hover {
+      background: #b2c4cb;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s ease-in-out; }
+
+/* ---------- AYURVEDA PAGE ---------- */
+.ayurveda__intro {
+  padding: 5px 20px; }
+  .ayurveda__intro h1 {
+    color: #7d7d7d;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    padding: 100px 0 20px 0; }
+  .ayurveda__intro h4 {
+    color: #7d7d7d;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0 5px 0; }
+  .ayurveda__intro p {
+    color: #7d7d7d;
+    padding-bottom: 15px;
+    margin: 0; }
+  .ayurveda__intro a {
+    display: block;
+    padding-bottom: 20px; }
+    .ayurveda__intro a:hover {
+      color: #beb0a3;
+      text-decoration: none;
+      transition: 0.3s ease-in-out; }
+  .ayurveda__intro button {
+    background: #b2c4cb;
+    color: white;
+    display: block;
+    font-size: 13px;
+    margin: 10px auto; }
+    .ayurveda__intro button:hover {
+      color: #f2f2f2;
+      transition: 0.3s ease-in-out; }
+  @media (max-width: 767px) {
+    .ayurveda__intro {
+      text-align: center; } }
+
+.ayurveda__main {
+  margin-bottom: 50px; }
+
+.ayurveda__first {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-10.36.14-AM-1024x621.png"); }
+
+.ayurveda__second {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2017/07/2015072712_JuliaYoga_375-1024x683.jpg"); }
+
+.ayurveda__third {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2017/06/IMG_6097.jpg"); }
+
+.no-padding {
+  padding: 0; }
+
+.ayurveda__main-container {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 50px 20px;
+  position: relative; }
+  .ayurveda__main-container .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(178, 196, 203, 0.7);
+    z-index: 0; }
+  .ayurveda__main-container .content {
+    position: relative;
+    text-align: center;
+    z-index: 1; }
+    .ayurveda__main-container .content h3 {
+      color: white;
+      line-height: 30px;
+      padding-bottom: 10px; }
+    .ayurveda__main-container .content p {
+      color: white;
+      line-height: 24px; }
+  .ayurveda__main-container .ayurveda__button {
+    background: white;
+    color: #b2c4cb;
+    font-size: 13px;
+    padding: 5px 10px; }
+    .ayurveda__main-container .ayurveda__button:hover {
       background: #b2c4cb;
       color: white;
       text-decoration: none;
