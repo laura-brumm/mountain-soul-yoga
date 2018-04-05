@@ -819,3 +819,100 @@ table {
       color: white;
       text-decoration: none;
       transition: 0.3s ease-in-out; }
+
+/* ---------- EVENTS PAGE ---------- */
+@media (max-width: 767px) {
+  .events__container {
+    padding-bottom: 0; } }
+
+.events__intro {
+  padding: 5px 20px; }
+  .events__intro h1 {
+    color: #7d7d7d;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    padding: 100px 0 20px 0; }
+  .events__intro p {
+    color: #7d7d7d;
+    padding-bottom: 15px;
+    margin: 0; }
+  .events__intro button {
+    background: #b2c4cb;
+    color: white;
+    display: block;
+    font-size: 13px;
+    margin: 10px auto; }
+    .events__intro button:hover {
+      color: #f2f2f2;
+      transition: 0.3s ease-in-out; }
+  @media (max-width: 767px) {
+    .events__intro {
+      text-align: center; } }
+
+.no-padding {
+  padding: 0; }
+
+.first-event {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2018/02/Reiki-1.jpg"); }
+
+.second-event {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2017/11/ayurvedic_doshas_1024x1024.jpg"); }
+
+.third-event {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2017/07/julia_bolster_supta_baddha_konasana.jpg"); }
+
+.fourth-event {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2018/02/2015072712_JuliaYoga_356-683x1024.jpg"); }
+
+.fifth-event {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2018/04/ttu_flyer_store-1024x1024.jpg"); }
+
+.sixth-event {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2016/04/20161205_MtnSoul_227-682x1024.jpg"); }
+
+.events__main {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  @media (max-width: 767px) {
+    .events__main {
+      padding-bottom: 0; } }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(178, 196, 203, 0.7);
+  z-index: 0; }
+
+.events__content {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 20px 10px;
+  position: relative;
+  text-align: center;
+  z-index: 1; }
+  .events__content h3 {
+    color: white;
+    line-height: 30px;
+    padding-bottom: 10px; }
+  .events__content p {
+    color: white;
+    line-height: 24px; }
+  .events__content .button {
+    background: white;
+    color: #d1c7be;
+    font-size: 13px;
+    padding: 5px 10px; }
+    .events__content .button:hover {
+      background: #d1c7be;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s ease-in-out; }
+  @media (max-width: 767px) {
+    .events__content {
+      padding: 75px 20px; } }
