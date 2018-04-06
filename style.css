@@ -878,21 +878,23 @@ table {
     .events__main {
       padding-bottom: 0; } }
 
+.event {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 20px 10px; }
+
 .overlay {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(178, 196, 203, 0.7);
+  background: rgba(209, 199, 190, 0.5);
   z-index: 0; }
 
 .events__content {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  padding: 20px 10px;
   position: relative;
   text-align: center;
   z-index: 1; }
