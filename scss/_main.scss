@@ -1282,3 +1282,157 @@ table {
     padding: 75px 20px;
   }
 }
+
+
+
+
+/* ---------- CONTACT PAGE ---------- */
+
+
+
+
+
+/* ---------- MUSINGS PAGE ---------- */
+
+.musings__container {
+  @media (max-width: 767px) {
+    padding-bottom: 0;
+  }
+}
+
+.nav__musings {
+  left: 75px;
+  position: fixed;
+  top: 200px;
+  width: 22%;
+  width: calc(25% - 50px);
+
+  h4 {
+    border-bottom: 2px solid $color__accent;
+    color: $color__accent;
+    font: {
+      size: 18px;
+      weight: $font__reg;
+    }
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+  }
+
+  li {
+    line-height: 20px;
+    padding-bottom: 10px;
+
+    a {
+      color: $color__brown;
+      font-weight: $font__bold;
+
+      &:hover {
+        color: black;
+        text-decoration:underline;
+        text-decoration-color: $color__accent;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+
+.no-padding {
+  padding: 0;
+}
+
+.first-musings {
+  background: white;
+}
+
+.second-musings {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-10.36.14-AM-1024x621.png");
+}
+
+.third-musings {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2017/07/2015072712_JuliaYoga_375-1024x683.jpg");
+}
+
+.fourth-musings {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2017/07/julia_bolster_supta_baddha_konasana.jpg");
+}
+
+.fifth-musings {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2017/06/IMG_6097.jpg");
+}
+
+.sixth-musings {
+  background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2017/06/Gina-C-884x1024.jpg");
+}
+
+.musings__main {
+  padding: {
+    top: 50px;
+    bottom: 50px;
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 0;
+  }
+}
+
+.musings {
+  background: {
+    position: center;
+    size: cover;
+    repeat: no-repeat;
+  }
+  height: 100%;
+  padding: 20px 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $color__primary-alpha;
+  z-index: 0;
+}
+
+.musings__content {
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+
+  h3 {
+    color: white;
+    line-height: 30px;
+    padding-bottom: 10px;
+  }
+
+  p {
+    color: white;
+    line-height: 24px;
+  }
+
+  .button {
+    background: white;
+    color: $color__primary;
+    font-size: 13px;
+    padding: 5px 10px;
+
+    &:hover {
+      background: $color__primary;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 75px 20px;
+  }
+}
