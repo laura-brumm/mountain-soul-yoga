@@ -1288,6 +1288,75 @@ table {
 
 /* ---------- CONTACT PAGE ---------- */
 
+.contact__heading {
+  padding: 50px 20px;
+
+  h1 {
+    color: $color__gray;
+    font: {
+      size: 40px;
+      weight: $font__bold;
+    }
+    letter-spacing: 4px;
+    padding: 50px 0 20px 0;
+  }
+
+  p {
+    color: $color__gray;
+    padding: 5px 0;
+    margin: 0;
+  }
+
+  .email {
+    color: $color__accent;
+  }
+}
+
+form {
+  .name-input,
+  .email-input,
+  .form-dropdown,
+  .form-comments {
+    border: none;
+    border-bottom: 2px solid $color__primary;
+    color: $color__primary;
+    font-size: 14px;
+    letter-spacing: 0.75px;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .form-dropdown {
+    background: white;
+    border-radius: 0;
+  }
+
+  .btn {
+    background: $color__primary;
+    border: none;
+    border-radius: 0;
+    display: block;
+    color: white;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 5px 10px;
+
+    &:hover {
+      background: $color__primary;
+      color: $color__secondary;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+.map-container {
+  @media (max-width: 767px) {
+    padding: 50px 0;
+  }
+}
+
 
 
 

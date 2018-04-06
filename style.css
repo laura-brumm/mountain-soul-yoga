@@ -920,6 +920,57 @@ table {
       padding: 75px 20px; } }
 
 /* ---------- CONTACT PAGE ---------- */
+.contact__heading {
+  padding: 50px 20px; }
+  .contact__heading h1 {
+    color: #7d7d7d;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    padding: 50px 0 20px 0; }
+  .contact__heading p {
+    color: #7d7d7d;
+    padding: 5px 0;
+    margin: 0; }
+  .contact__heading .email {
+    color: #d1c7be; }
+
+form .name-input,
+form .email-input,
+form .form-dropdown,
+form .form-comments {
+  border: none;
+  border-bottom: 2px solid #b2c4cb;
+  color: #b2c4cb;
+  font-size: 14px;
+  letter-spacing: 0.75px;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%; }
+
+form .form-dropdown {
+  background: white;
+  border-radius: 0; }
+
+form .btn {
+  background: #b2c4cb;
+  border: none;
+  border-radius: 0;
+  display: block;
+  color: white;
+  font-size: 15px;
+  margin: 0 auto;
+  padding: 5px 10px; }
+  form .btn:hover {
+    background: #b2c4cb;
+    color: #f2f2f2;
+    text-decoration: none;
+    transition: 0.3s ease-in-out; }
+
+@media (max-width: 767px) {
+  .map-container {
+    padding: 50px 0; } }
+
 /* ---------- MUSINGS PAGE ---------- */
 @media (max-width: 767px) {
   .musings__container {
