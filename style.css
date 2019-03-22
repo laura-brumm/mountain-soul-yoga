@@ -105,6 +105,9 @@ h2 {
   font-weight: 700;
   letter-spacing: 2.5px;
   padding-bottom: 20px; }
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 20px; } }
 
 h3 {
   font-size: 20px;
@@ -158,6 +161,9 @@ form {
   position: fixed;
   width: 100%;
   z-index: 999; }
+  @media (max-width: 767px) {
+    .nav-bar {
+      height: 25px; } }
 
 .container__nav {
   width: 80%; }
@@ -169,6 +175,9 @@ form {
     letter-spacing: 3px;
     line-height: 40px;
     padding: 5px; }
+    @media (max-width: 767px) {
+      .nav-left .nav-link {
+        line-height: auto; } }
     .nav-left .nav-link img {
       background: rgba(178, 196, 203, 0.7);
       height: 100px;
@@ -176,9 +185,16 @@ form {
       position: fixed;
       top: 0;
       left: 75px; }
+      @media (max-width: 767px) {
+        .nav-left .nav-link img {
+          display: none; } }
   .nav-left .nav__brand {
     position: fixed;
     left: 175px; }
+    @media (max-width: 767px) {
+      .nav-left .nav__brand {
+        left: 25px;
+        line-height: 16px; } }
 
 .nav-right {
   position: fixed;
@@ -199,10 +215,16 @@ form {
   left: 0;
   width: 50px;
   z-index: 999; }
+  @media (max-width: 767px) {
+    .container__left-bar {
+      width: 25px; } }
   .container__left-bar .content__left-bar {
     position: fixed;
     bottom: 60px;
     width: 50px; }
+    @media (max-width: 767px) {
+      .container__left-bar .content__left-bar {
+        display: none; } }
     .container__left-bar .content__left-bar ul {
       width: 100%;
       text-align: center; }
@@ -223,11 +245,17 @@ form {
   right: 0;
   width: 50px;
   z-index: 999; }
+  @media (max-width: 767px) {
+    .container__right-bar {
+      width: 25px; } }
   .container__right-bar .content__right-bar {
     position: absolute;
     top: 50%;
     transform: rotate(90deg);
     transform-origin: 25px; }
+    @media (max-width: 767px) {
+      .container__right-bar .content__right-bar {
+        display: none; } }
     .container__right-bar .content__right-bar p {
       margin: 0;
       white-space: nowrap; }
@@ -244,6 +272,8 @@ form {
   padding: 50px; }
   @media (max-width: 767px) {
     .container__wrapper {
+      padding-left: 25px;
+      padding-right: 25px;
       padding-bottom: 10px; } }
 
 .padding__main-content {
@@ -463,6 +493,9 @@ form {
   position: fixed;
   width: 100%;
   z-index: 998; }
+  @media (max-width: 767px) {
+    .footer {
+      height: 25px; } }
   .footer .footer__content {
     position: fixed;
     right: 60px; }
@@ -516,7 +549,8 @@ form {
   @media (max-width: 767px) {
     .classes-schedule,
     .classes-description {
-      text-align: center; } }
+      text-align: center;
+      font-size: 28px; } }
 
 table {
   width: 100%; }
@@ -585,6 +619,9 @@ table {
   font-weight: 600;
   letter-spacing: 4px;
   padding: 100px 0 20px 10px; }
+  @media (max-width: 767px) {
+    .content__pricing h1 {
+      font-size: 28px; } }
 
 @media (max-width: 767px) {
   .content__pricing {
@@ -615,6 +652,9 @@ table {
   font-weight: 600;
   letter-spacing: 4px;
   padding: 100px 0 20px 0; }
+  @media (max-width: 767px) {
+    .about__container h1 {
+      font-size: 28px; } }
 
 .about__intro,
 .about__team {
@@ -645,6 +685,10 @@ table {
   padding-bottom: 10px; }
 
 /* ---------- TEACHER TRAININGS PAGE ---------- */
+@media (max-width: 767px) {
+  .teacher-trainings__container {
+    padding-bottom: 0; } }
+
 .teacher-trainings__intro {
   padding: 5px 20px; }
   .teacher-trainings__intro h1 {
@@ -653,6 +697,9 @@ table {
     font-weight: 600;
     letter-spacing: 4px;
     padding: 100px 0 20px 0; }
+    @media (max-width: 767px) {
+      .teacher-trainings__intro h1 {
+        font-size: 28px; } }
   .teacher-trainings__intro h4 {
     color: #7d7d7d;
     font-size: 18px;
@@ -683,6 +730,10 @@ table {
 
 .teacher-trainings__main {
   margin-bottom: 50px; }
+  @media (max-width: 767px) {
+    .teacher-trainings__main {
+      margin-bottom: 0;
+      padding-bottom: 0; } }
 
 .teacher-trainings__first {
   background: #f2f2f2; }
@@ -731,6 +782,10 @@ table {
       transition: 0.3s ease-in-out; }
 
 /* ---------- AYURVEDA PAGE ---------- */
+@media (max-width: 767px) {
+  .ayurveda__container {
+    padding-bottom: 0; } }
+
 .ayurveda__intro {
   padding: 5px 20px; }
   .ayurveda__intro h1 {
@@ -739,6 +794,9 @@ table {
     font-weight: 600;
     letter-spacing: 4px;
     padding: 100px 0 20px 0; }
+    @media (max-width: 767px) {
+      .ayurveda__intro h1 {
+        font-size: 28px; } }
   .ayurveda__intro h4 {
     color: #7d7d7d;
     font-size: 18px;
@@ -770,6 +828,10 @@ table {
 
 .ayurveda__main {
   margin-bottom: 50px; }
+  @media (max-width: 767px) {
+    .ayurveda__main {
+      margin-bottom: 0;
+      padding-bottom: 0; } }
 
 .ayurveda__first {
   background-image: url("https://mountainsoulyoga.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-10.36.14-AM-1024x621.png"); }
@@ -833,6 +895,9 @@ table {
     font-weight: 600;
     letter-spacing: 4px;
     padding: 100px 0 20px 0; }
+    @media (max-width: 767px) {
+      .events__intro h1 {
+        font-size: 28px; } }
   .events__intro p {
     color: #7d7d7d;
     padding-bottom: 15px;
@@ -928,6 +993,9 @@ table {
     font-weight: 600;
     letter-spacing: 4px;
     padding: 50px 0 20px 0; }
+    @media (max-width: 767px) {
+      .contact__heading h1 {
+        font-size: 28px; } }
   .contact__heading p {
     color: #7d7d7d;
     padding: 5px 0;
