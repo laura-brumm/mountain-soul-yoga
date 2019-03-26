@@ -203,6 +203,7 @@ form {
       position: fixed;
       top: 0;
       left: 75px;
+      z-index: 1;
 
       @media (max-width: 767px) {
         display: none;
@@ -225,12 +226,21 @@ form {
   position: fixed;
   right: 75px;
 
+  @media (max-width: 1200px) {
+    padding-top: 50px;
+    background: $color__secondary;
+  }
+
   @media (max-width: 767px) {
+    padding-top: 25px;
     right: 25px;
   }
 
   .nav-item {
-    
+
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
   }
 
   .nav-link {
@@ -241,7 +251,6 @@ form {
     &:hover {
       background: $color__primary-alpha;
       color: white;
-
     }
 
     @media (max-width: 1200px) {
@@ -252,6 +261,11 @@ form {
       line-height: 16px;
     }
   }
+}
+
+.active {
+  background: $color__primary-alpha;
+  color: white;
 }
 
 .icon {
@@ -276,26 +290,14 @@ form {
   }
 }
 
+@media (max-width: 1200px) {
+
 .nav-right.responsive {
   right: auto;
   position: relative;
-  
-  @media (max-width: 1200px) {
-    padding-top: 50px;
-  }
-
-  @media (max-width: 767px) {
-    padding-top: 25px;
-  }
-}
-
-.nav-right.responsive .nav-item {
-  width: 100%;
 }
 
 .nav-right.responsive .nav-item .nav-link {
-
-  @media (max-width: 1200px) {
     float: none;
     display: block;
     text-align: center;
