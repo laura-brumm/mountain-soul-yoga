@@ -796,6 +796,7 @@ form {
 
 table {
   width: 100%;
+  min-width: 700px;
 
   thead {
     border-top: 1px solid $color__primary;
@@ -829,6 +830,8 @@ table {
 .schedule__classes {
   padding-left: 10px;
   padding-right: 10px;
+  overflow-x: scroll;
+  width: 100%;
 }
 
 .description__classes {
