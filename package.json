@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass scss -o .",
     "browsersync": "browser-sync start --server '.' --files '*'",
     "dev": "parallelshell 'npm run scss' 'npm run browsersync'",
     "scss": "node-sass --watch scss -o ."
